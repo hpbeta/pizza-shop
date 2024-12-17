@@ -1,3 +1,6 @@
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@radix-ui/react-label";
 import { Helmet } from "react-helmet-async";
 
 export function SignIn() {
@@ -13,9 +16,10 @@ export function SignIn() {
 
             <form  className="space-y-4 ">
                 <div className="space-y-2">
-                    
+                    <Label htmlFor="email">Seu e-mail</Label>
+                    <Input id="email" type="email" />
                 </div>
-                <button type="submit">Acessar painel</button>
+                <Button className="w-full" type="submit">Acessar painel</Button>
             </form>
         </div>
       </div>
